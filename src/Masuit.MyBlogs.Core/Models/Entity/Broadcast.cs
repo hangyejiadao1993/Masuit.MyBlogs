@@ -8,7 +8,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// ¶©ÔÄ±í
     /// </summary>
-    [Table("Broadcast")]
+    [Table("broadcast")]
     public class Broadcast : BaseEntity
     {
         public Broadcast()

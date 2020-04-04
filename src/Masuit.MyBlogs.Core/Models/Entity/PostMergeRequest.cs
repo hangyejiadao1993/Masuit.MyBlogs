@@ -7,7 +7,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// ÎÄÕÂĞŞ¸ÄÇëÇó
     /// </summary>
-    [Table("PostMergeRequest")]
+    [Table("postmergerequest")]
     public class PostMergeRequest : BaseEntity
     {
         /// <summary>

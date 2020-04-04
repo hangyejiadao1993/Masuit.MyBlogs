@@ -78,9 +78,9 @@ namespace Masuit.MyBlogs.Core.Infrastructure
         public DataContext CreateDbContext(string[] args)
         {
             //IConfigurationRoot config = new ConfigurationBuilder().AddJsonFile("appsettings.json", optional: true, reloadOnChange: true).Build();
-            var conn = "Server=127.0.0.1;Database=myblogs;Uid=root;Pwd=;Charset=utf8mb4";
+            //var conn = "Server=127.0.0.1;Database=myblogs;Uid=root;Pwd=;Charset=utf8mb4";
             var builder = new DbContextOptionsBuilder<DataContext>();
-            builder.UseMySql(conn);
+            //builder.UseMySql(conn);
             //builder.UseSqlServer("Data Source=.;Initial Catalog=CoreTest;Integrated Security=True");
 
             return new DataContext(builder.Options);

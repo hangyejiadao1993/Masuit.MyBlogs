@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Masuit.MyBlogs.Core.Models.Entity
 {
-    [Table("Advertisement")]
+    [Table("advertisement")]
     public class Advertisement : BaseEntity
     {
         public Advertisement()

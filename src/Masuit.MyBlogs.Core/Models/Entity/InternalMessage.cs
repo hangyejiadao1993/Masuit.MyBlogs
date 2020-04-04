@@ -6,7 +6,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// 站内信消息通知
     /// </summary>
-    [Table("InternalMessage")]
+    [Table("internalmessage")]
     public class InternalMessage : BaseEntity
     {
         public InternalMessage()

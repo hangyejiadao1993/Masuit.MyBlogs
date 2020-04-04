@@ -8,7 +8,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// µ¼º½²Ëµ¥
     /// </summary>
-    [Table("Menu")]
+    [Table("menu")]
     public class Menu : BaseEntity
     {
         public Menu()

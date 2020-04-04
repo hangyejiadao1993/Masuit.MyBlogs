@@ -9,7 +9,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// ÍøÕ¾¹«¸æ
     /// </summary>
-    [Table("Notice")]
+    [Table("notice")]
     public class Notice : BaseEntity
     {
         public Notice()

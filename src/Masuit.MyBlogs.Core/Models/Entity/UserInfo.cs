@@ -9,7 +9,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// ”√ªß
     /// </summary>
-    [Table("UserInfo")]
+    [Table("userinfo")]
     public class UserInfo : BaseEntity
     {
         public UserInfo()

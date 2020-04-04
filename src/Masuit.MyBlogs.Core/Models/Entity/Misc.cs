@@ -9,7 +9,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// ‘”œÓ“≥
     /// </summary>
-    [Table("Misc")]
+    [Table("misc")]
     public class Misc : BaseEntity
     {
         public Misc()

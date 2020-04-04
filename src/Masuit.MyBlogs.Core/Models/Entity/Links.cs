@@ -7,7 +7,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// ”—«È¡¥Ω”
     /// </summary>
-    [Table("Links")]
+    [Table("links")]
     public class Links : BaseEntity
     {
         public Links()

@@ -11,7 +11,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// ÁôÑÔ°å
     /// </summary>
-    [Table("LeaveMessage")]
+    [Table("leavemessage")]
     public class LeaveMessage : BaseEntity
     {
         public LeaveMessage()

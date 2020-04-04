@@ -6,7 +6,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// 打赏表
     /// </summary>
-    [Table("Donate")]
+    [Table("donate")]
     public class Donate : BaseEntity
     {
         /// <summary>

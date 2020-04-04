@@ -11,7 +11,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// 文章历史版本
     /// </summary>
-    [Table("PostHistoryVersion")]
+    [Table("posthistoryversion")]
     public class PostHistoryVersion : BaseEntity
     {
         public PostHistoryVersion()

@@ -12,7 +12,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// ндуб
     /// </summary>
-    [Table("Post")]
+    [Table("post")]
     public class Post : BaseEntity
     {
         public Post()

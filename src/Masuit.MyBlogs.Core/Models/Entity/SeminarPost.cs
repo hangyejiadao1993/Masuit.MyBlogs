@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Masuit.MyBlogs.Core.Models.Entity
 {
-    [Table(nameof(SeminarPost))]
+    [Table("seminarpost")]
     public class SeminarPost
     {
         //[Key]

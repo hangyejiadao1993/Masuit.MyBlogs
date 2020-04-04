@@ -2,7 +2,7 @@
 
 namespace Masuit.MyBlogs.Core.Models.Entity
 {
-    [Table(nameof(FastShare))]
+    [Table("fastshare")]
     public class FastShare : BaseEntity
     {
         public string Title { get; set; }

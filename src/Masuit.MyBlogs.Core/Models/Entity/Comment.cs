@@ -10,7 +10,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// ÆÀÂÛ±í
     /// </summary>
-    [Table("Comment")]
+    [Table("comment")]
     public class Comment : BaseEntity
     {
         public Comment()

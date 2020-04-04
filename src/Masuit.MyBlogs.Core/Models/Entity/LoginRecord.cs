@@ -7,7 +7,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// 用户登陆记录
     /// </summary>
-    [Table("LoginRecord")]
+    [Table("loginrecord")]
     public class LoginRecord : BaseEntity
     {
         /// <summary>

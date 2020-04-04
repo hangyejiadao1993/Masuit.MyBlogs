@@ -8,7 +8,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// ÎÄÕÂ·ÖÀà
     /// </summary>
-    [Table("Category")]
+    [Table("category")]
     public class Category : BaseEntity
     {
         public Category()

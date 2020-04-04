@@ -7,7 +7,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// œµÕ≥…Ë÷√
     /// </summary>
-    [Table("SystemSetting")]
+    [Table("systemsetting")]
     public class SystemSetting : BaseEntity
     {
         public SystemSetting()

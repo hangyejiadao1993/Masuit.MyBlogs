@@ -7,7 +7,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// ËÑË÷ÏêÏ¸¼ÇÂ¼
     /// </summary>
-    [Table("SearchDetails")]
+    [Table("searchdetails")]
     public class SearchDetails
     {
         public SearchDetails()

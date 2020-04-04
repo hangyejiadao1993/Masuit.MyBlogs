@@ -7,7 +7,7 @@ namespace Masuit.MyBlogs.Core.Models.Entity
     /// <summary>
     /// ÎÄÕÂ×¨Ìâ
     /// </summary>
-    [Table("Seminar")]
+    [Table("seminar")]
     public partial class Seminar : BaseEntity
     {
         public Seminar()
