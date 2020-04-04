@@ -1,4 +1,4 @@
-﻿using Masuit.MyBlogs.Core.Models.Entity;
+﻿using Masuit.MyBlogs.Domain.Entity;
 
 namespace Masuit.MyBlogs.Core.Models.ViewModel
 {

@@ -1,14 +1,14 @@
-﻿using Masuit.MyBlogs.Core.Common;
-using Masuit.MyBlogs.Core.Extensions;
-using Masuit.MyBlogs.Core.Infrastructure.Services.Interface;
+﻿using Masuit.MyBlogs.Core.Extensions;
 using Masuit.MyBlogs.Core.Models.Command;
-using Masuit.MyBlogs.Core.Models.DTO;
-using Masuit.MyBlogs.Core.Models.Entity;
-using Masuit.MyBlogs.Core.Models.Enum;
+using Masuit.MyBlogs.Domain.Entity;
+using Masuit.MyBlogs.Domain.Enum;
+using Masuit.MyBlogs.Services.DTO;
+using Masuit.MyBlogs.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
 
+using Masuit.Tools.Helper;
 namespace Masuit.MyBlogs.Core.Controllers
 {
     /// <summary>

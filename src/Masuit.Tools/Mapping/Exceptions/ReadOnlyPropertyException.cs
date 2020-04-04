@@ -7,7 +7,7 @@ namespace Masuit.Tools.Mapping.Exceptions
     /// <summary>
     /// 只读属性的异常
     /// </summary>
-    [Serializable]
+    //[Serializable]
     public class ReadOnlyPropertyException : MapperExceptionBase
     {
         /// <summary>

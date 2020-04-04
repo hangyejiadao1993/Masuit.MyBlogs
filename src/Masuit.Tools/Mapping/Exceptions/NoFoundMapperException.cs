@@ -6,7 +6,7 @@ namespace Masuit.Tools.Mapping.Exceptions
     /// <summary>
     /// 未找到映射关系时出现异常
     /// </summary>
-    [Serializable]
+    //[Serializable]
     public class NoFoundMapperException : MapperExceptionBase
     {
         /// <summary>

@@ -1,4 +1,4 @@
-using Masuit.MyBlogs.Core.Models.DTO;
+using Masuit.MyBlogs.Services.DTO;
 using Masuit.Tools.Core.Validator;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;

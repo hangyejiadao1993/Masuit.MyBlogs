@@ -1,5 +1,5 @@
-﻿using Masuit.MyBlogs.Core.Infrastructure.Services.Interface;
-using Masuit.MyBlogs.Core.Models.Enum;
+﻿using Masuit.MyBlogs.Domain.Enum;
+using Masuit.MyBlogs.Services.Interface;
 using Masuit.Tools.Logging;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;

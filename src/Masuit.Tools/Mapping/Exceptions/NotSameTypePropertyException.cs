@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Runtime.Serialization;
 
 namespace Masuit.Tools.Mapping.Exceptions
@@ -6,7 +7,7 @@ namespace Masuit.Tools.Mapping.Exceptions
     /// <summary>
     /// 当属性不是同一类型或找不到映射器时出现异常
     /// </summary>
-    [Serializable]
+    //[Serializable]
     public class NotSameTypePropertyException : MapperExceptionBase
     {
         /// <summary>

@@ -1,6 +1,5 @@
-using Masuit.MyBlogs.Core.Models.Entity;
-using Masuit.MyBlogs.Core.Models.Enum;
-using Masuit.MyBlogs.Core.Models.Validation;
+using Masuit.MyBlogs.Domain.Entity;
+using Masuit.MyBlogs.Domain.Validation;
 using System.ComponentModel.DataAnnotations;
 
 namespace Masuit.MyBlogs.Core.Models.Command
@@ -12,7 +11,7 @@ namespace Masuit.MyBlogs.Core.Models.Command
     {
         public MiscCommand()
         {
-            Status = Status.Display;
+            Status = Masuit.MyBlogs.Domain.Enum.Status.Display;
         }
 
         /// <summary>

@@ -1,5 +1,5 @@
-using Masuit.MyBlogs.Core.Models.DTO;
-using Masuit.MyBlogs.Core.Models.Enum;
+using Masuit.MyBlogs.Domain.Enum;
+using Masuit.MyBlogs.Services.DTO;
 using System;
 
 namespace Masuit.MyBlogs.Core.Models.ViewModel

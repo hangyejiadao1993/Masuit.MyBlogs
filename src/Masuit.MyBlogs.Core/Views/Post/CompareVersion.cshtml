@@ -1,7 +1,8 @@
 ﻿@using System.Diagnostics
-@using Masuit.MyBlogs.Core.Common
-@using Masuit.MyBlogs.Core.Models.Entity
-@model Masuit.MyBlogs.Core.Models.Entity.PostHistoryVersion[]
+@using  Masuit.MyBlogs.Services.DTO
+@using Masuit.MyBlogs.Domain.Entity
+@using Masuit.Tools.Helper
+@model PostHistoryVersion[]
 @{
     ViewBag.Title = Model[0].Title + "版本对比";
     Layout = "~/Views/Shared/_Layout.cshtml";

@@ -1,10 +1,13 @@
 ﻿@using System.Web
-@using Masuit.MyBlogs.Core.Models.DTO
-@using Masuit.MyBlogs.Core.Models.Entity
-@using Masuit.MyBlogs.Core.Models.ViewModel
+@using Masuit.MyBlogs.Domain.Entity
+@using Masuit.MyBlogs.Domain.Enum
+@using Masuit.MyBlogs.Services.DTO
+@using Masuit.Tools.Helper
 @using Masuit.Tools
+@using Masuit.MyBlogs.Core.Models.ViewModel
 @using Microsoft.AspNetCore.Mvc.Rendering
-@model SearchResult<Masuit.MyBlogs.Core.Models.DTO.PostDto>
+@using Masuit.Tools.Models
+@model SearchResult<Masuit.MyBlogs.Services.DTO.PostDto>
 @{
     ViewBag.Title = "站内搜索：" + ViewBag.Keyword;
     Layout = "~/Views/Shared/_Layout.cshtml";

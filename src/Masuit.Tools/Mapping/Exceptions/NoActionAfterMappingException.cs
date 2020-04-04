@@ -7,7 +7,7 @@ namespace Masuit.Tools.Mapping.Exceptions
     /// 无法执行任何操作时的异常
     /// </summary>
     /// <seealso cref="MapperExceptionBase" />
-    [Serializable]
+ 
     public class NoActionAfterMappingException : MapperExceptionBase
     {
         /// <summary>

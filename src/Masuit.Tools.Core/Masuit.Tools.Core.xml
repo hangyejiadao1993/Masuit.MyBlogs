@@ -71,6 +71,36 @@
             更新时忽略的字段，检测到这个attribute时AddOrUpdate将忽略改字段
             </summary>
         </member>
+        <member name="T:Masuit.Tools.Core.Configs.AppConfig">
+            <summary>
+            应用程序配置
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Core.Configs.AppConfig.ConnString">
+            <summary>
+            数据库连接字符串
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Core.Configs.AppConfig.BaiduAK">
+            <summary>
+            百度AK
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Core.Configs.AppConfig.Redis">
+            <summary>
+            Redis连接字符串
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Core.Configs.AppConfig.AliOssConfig">
+            <summary>
+            OSS配置
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Core.Configs.AppConfig.GitlabConfigs">
+            <summary>
+            gitlab图床配置
+            </summary>
+        </member>
         <member name="T:Masuit.Tools.Core.Config.CoreConfig">
             <summary>
             .net core的配置导入
@@ -1037,6 +1067,211 @@
             </summary>
             <param name="zipname">要解压的文件名</param>
             <param name="zippath">要解压的文件路径</param>
+        </member>
+        <member name="T:Masuit.Tools.Helper.CommonHelper">
+            <summary>
+            公共类库
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Helper.CommonHelper.BanRegex">
+            <summary>
+            敏感词
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Helper.CommonHelper.ModRegex">
+            <summary>
+            审核词
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Helper.CommonHelper.DenyIP">
+            <summary>
+            全局禁止IP
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Helper.CommonHelper.IPWhiteList">
+            <summary>
+            ip白名单
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Helper.CommonHelper.IPErrorTimes">
+            <summary>
+            每IP错误的次数统计
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Helper.CommonHelper.SystemSettings">
+            <summary>
+            系统设定
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Helper.CommonHelper.InterviewCount">
+            <summary>
+            访问量
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Helper.CommonHelper.AverageCount">
+            <summary>
+            平均访问量
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Helper.CommonHelper.StartupTime">
+            <summary>
+            网站启动时间
+            </summary>
+        </member>
+        <member name="P:Masuit.Tools.Helper.CommonHelper.DenyIPRange">
+            <summary>
+            IP黑名单地址段
+            </summary>
+        </member>
+        <member name="M:Masuit.Tools.Helper.CommonHelper.IsDenyIpAddress(System.String)">
+            <summary>
+            判断IP地址是否被黑名单
+            </summary>
+            <param name="ip"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Masuit.Tools.Helper.CommonHelper.IsInDenyArea(System.String)">
+            <summary>
+            是否是禁区
+            </summary>
+            <param name="ips"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Masuit.Tools.Helper.CommonHelper.Mapper``1(System.Object)">
+            <summary>
+            类型映射
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Masuit.Tools.Helper.CommonHelper.SendMail(System.String,System.String,System.String)">
+            <summary>
+            发送邮件
+            </summary>
+            <param name="title">标题</param>
+            <param name="content">内容</param>
+            <param name="tos">收件人</param>
+        </member>
+        <member name="M:Masuit.Tools.Helper.CommonHelper.IsRobot(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+            是否是机器人访问
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Masuit.Tools.Helper.CommonHelper.ClearImgAttributes(System.String)">
+            <summary>
+            清理html的img标签的除src之外的其他属性
+            </summary>
+            <param name="html"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Masuit.Tools.Helper.CommonHelper.ReplaceImgAttribute(System.String,System.String)">
+            <summary>
+            将html的img标签的src属性名替换成data-original
+            </summary>
+            <param name="html"></param>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Masuit.Tools.Helper.CommonHelper.GetSummary(System.String,System.Int32,System.Int32)">
+            <summary>
+            获取文章摘要
+            </summary>
+            <param name="html"></param>
+            <param name="length">截取长度</param>
+            <param name="min">摘要最少字数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Masuit.Tools.Helper.CommonHelper.AddWatermark(System.IO.Stream)">
+            <summary>
+            添加水印
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Masuit.Tools.Helper.HangfireHelper">
+            <summary>
+            HangfireHelper
+            </summary>
+        </member>
+        <member name="M:Masuit.Tools.Helper.HangfireHelper.CreateJob(System.Type,System.String,System.String,System.Object[])">
+            <summary>
+            创建任务
+            </summary>
+            <param name="type">任务类</param>
+            <param name="method">调用方法</param>
+            <param name="queue">队列名</param>
+            <param name="args">调用参数</param>
+            <returns></returns>
+        </member>
+        <member name="P:Masuit.Tools.Helper.TrackData.RequestLogs">
+            <summary>
+            请求日志
+            </summary>
+        </member>
+        <member name="M:Masuit.Tools.Helper.TrackData.DumpLog">
+            <summary>
+            刷写日志
+            </summary>
+        </member>
+        <member name="T:Masuit.Tools.Common.ImagebedClient">
+            <summary>
+            图床客户端
+            </summary>
+        </member>
+        <member name="M:Masuit.Tools.Common.ImagebedClient.#ctor(System.Net.Http.IHttpClientFactory,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            图床客户端
+            </summary>
+            <param name="httpClientFactory"></param>
+            <param name="config"></param>
+        </member>
+        <member name="P:Masuit.Tools.Common.ImagebedClient.OssClient">
+            <summary>
+            OSS客户端
+            </summary>
+        </member>
+        <member name="M:Masuit.Tools.Common.ImagebedClient.UploadImage(System.IO.Stream,System.String)">
+            <summary>
+            上传图片
+            </summary>
+            <param name="stream"></param>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Masuit.Tools.Common.ImagebedClient.UploadGitlab(System.IO.Stream,System.String)">
+            <summary>
+            gitlab图床
+            </summary>
+            <param name="stream"></param>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Masuit.Tools.Common.ImagebedClient.UploadGitee(Masuit.Tools.Core.Configs.GitlabConfig,System.IO.Stream,System.String)">
+            <summary>
+            码云图床
+            </summary>
+            <param name="config"></param>
+            <param name="stream"></param>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Masuit.Tools.Common.ImagebedClient.UploadOss(System.IO.Stream,System.String)">
+            <summary>
+            阿里云Oss图床
+            </summary>
+            <param name="stream"></param>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Masuit.Tools.Common.ImagebedClient.ReplaceImgSrc(System.String)">
+            <summary>
+            替换img标签的src属性
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
         </member>
         <member name="T:Masuit.Tools.Strings.ValidateCode">
             <summary>

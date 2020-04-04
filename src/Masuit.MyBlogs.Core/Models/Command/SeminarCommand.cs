@@ -1,4 +1,4 @@
-﻿using Masuit.MyBlogs.Core.Models.DTO;
+﻿using Masuit.MyBlogs.Services.DTO;
 using System.ComponentModel.DataAnnotations;
 
 namespace Masuit.MyBlogs.Core.Models.Command

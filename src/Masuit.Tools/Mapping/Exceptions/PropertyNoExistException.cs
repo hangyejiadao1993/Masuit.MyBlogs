@@ -6,7 +6,7 @@ namespace Masuit.Tools.Mapping.Exceptions
     /// <summary>
     /// 找不到属性时出现异常
     /// </summary>
-    [Serializable]
+    //[System.Serializable]
     public class PropertyNoExistException : MapperExceptionBase
     {
         /// <summary>

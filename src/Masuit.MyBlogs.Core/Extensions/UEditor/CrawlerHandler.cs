@@ -1,5 +1,5 @@
-﻿using Masuit.MyBlogs.Core.Common;
-using Masuit.Tools;
+﻿using Masuit.Tools;
+using Masuit.Tools.Common;
 using Masuit.Tools.Logging;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-
+using Masuit.Tools.Helper;
 namespace Masuit.MyBlogs.Core.Extensions.UEditor
 {
     /// <summary>

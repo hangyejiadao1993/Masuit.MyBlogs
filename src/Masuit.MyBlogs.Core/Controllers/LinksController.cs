@@ -1,9 +1,9 @@
-﻿using Masuit.MyBlogs.Core.Common;
-using Masuit.MyBlogs.Core.Extensions;
-using Masuit.MyBlogs.Core.Models.DTO;
-using Masuit.MyBlogs.Core.Models.Entity;
-using Masuit.MyBlogs.Core.Models.Enum;
+﻿using Masuit.MyBlogs.Core.Extensions;
+using Masuit.MyBlogs.Domain.Entity;
+using Masuit.MyBlogs.Domain.Enum;
+using Masuit.MyBlogs.Services.DTO;
 using Masuit.Tools;
+using Masuit.Tools.Helper;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;

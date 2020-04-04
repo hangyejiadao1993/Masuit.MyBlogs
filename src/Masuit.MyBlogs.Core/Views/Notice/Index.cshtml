@@ -1,4 +1,9 @@
-﻿@model IList<Masuit.MyBlogs.Core.Models.DTO.NoticeDto>
+﻿@using Masuit.MyBlogs.Domain.Entity
+@using Masuit.MyBlogs.Domain.Enum
+@using Masuit.MyBlogs.Services.DTO
+@using Masuit.Tools.Helper
+@using Masuit.Tools
+@model IList<NoticeDto>
 @{
     ViewBag.Title = "网站公告栏";
     Layout = "~/Views/Shared/_Layout.cshtml";

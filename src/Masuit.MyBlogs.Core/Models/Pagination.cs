@@ -1,4 +1,4 @@
-﻿using Masuit.MyBlogs.Core.Models.Enum;
+﻿using Masuit.MyBlogs.Domain.Enum;
 
 namespace Masuit.MyBlogs.Core.Models
 {

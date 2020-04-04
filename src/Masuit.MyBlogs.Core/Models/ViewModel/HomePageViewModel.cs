@@ -1,5 +1,5 @@
-﻿using Masuit.MyBlogs.Core.Models.DTO;
-using Masuit.MyBlogs.Core.Models.Entity;
+﻿using Masuit.MyBlogs.Domain.Entity;
+using Masuit.MyBlogs.Services.DTO;
 using Masuit.Tools.Models;
 using System.Collections.Generic;
 using System.Linq;

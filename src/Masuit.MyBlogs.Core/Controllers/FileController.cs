@@ -1,8 +1,8 @@
-﻿using Masuit.MyBlogs.Core.Common;
-using Masuit.MyBlogs.Core.Extensions;
+﻿using Masuit.MyBlogs.Core.Extensions;
 using Masuit.MyBlogs.Core.Models.ViewModel;
 using Masuit.Tools.AspNetCore.ResumeFileResults.Extensions;
 using Masuit.Tools.Files;
+using Masuit.Tools.Helper;
 using Masuit.Tools.Logging;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;

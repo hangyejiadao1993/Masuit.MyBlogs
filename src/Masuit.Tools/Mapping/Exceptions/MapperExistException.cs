@@ -6,7 +6,7 @@ namespace Masuit.Tools.Mapping.Exceptions
     /// <summary>
     /// 映射已存在时的异常
     /// </summary>
-    [Serializable]
+    //[Serializable]
     public class MapperExistException : MapperExceptionBase
 
     {

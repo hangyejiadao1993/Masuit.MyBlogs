@@ -1,0 +1,22 @@
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Masuit.MyBlogs.Domain.Entity
+{
+    [Table("seminarposthistoryversion")]
+    public class SeminarPostHistoryVersion
+    {
+        //[Key]
+        //public string Id { get; set; }
+
+        [ForeignKey("Seminar_Id")]
+        public int SeminarId { get; set; }
+
+        [ForeignKey("PostHistoryVersion_Id")]
+        public int PostHistoryVersionId { get; set; }
+
+        public virtual Seminar Seminar { get; set; }
+
+        public virtual PostHistoryVersion PostHistoryVersion { get; set; }
+    }
+}

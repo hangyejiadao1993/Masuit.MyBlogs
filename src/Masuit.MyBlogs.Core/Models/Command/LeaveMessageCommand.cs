@@ -1,6 +1,6 @@
-using Masuit.MyBlogs.Core.Models.Entity;
-using Masuit.MyBlogs.Core.Models.Enum;
-using Masuit.MyBlogs.Core.Models.Validation;
+using Masuit.MyBlogs.Domain.Entity;
+using Masuit.MyBlogs.Domain.Enum;
+using Masuit.MyBlogs.Domain.Validation;
 using Masuit.Tools.Core.Validator;
 using System.ComponentModel.DataAnnotations;
 

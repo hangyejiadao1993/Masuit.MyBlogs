@@ -1,14 +1,14 @@
 ﻿using Hangfire;
-using Masuit.MyBlogs.Core.Common;
 using Masuit.MyBlogs.Core.Extensions;
-using Masuit.MyBlogs.Core.Infrastructure.Services.Interface;
 using Masuit.MyBlogs.Core.Models.Command;
-using Masuit.MyBlogs.Core.Models.DTO;
-using Masuit.MyBlogs.Core.Models.Entity;
-using Masuit.MyBlogs.Core.Models.Enum;
 using Masuit.MyBlogs.Core.Models.ViewModel;
+using Masuit.MyBlogs.Domain.Entity;
+using Masuit.MyBlogs.Domain.Enum;
+using Masuit.MyBlogs.Services.DTO;
+using Masuit.MyBlogs.Services.Interface;
 using Masuit.Tools;
 using Masuit.Tools.Core.Net;
+using Masuit.Tools.Helper;
 using Masuit.Tools.Html;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -17,7 +17,6 @@ using Microsoft.Net.Http.Headers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 

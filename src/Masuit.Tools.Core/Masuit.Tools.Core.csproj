@@ -135,8 +135,16 @@ github：https://github.com/ldqk/Masuit.Tools</Description>
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Aliyun.OSS.SDK.NetCore" Version="2.9.1" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="CSRedisCore" Version="3.5.5" />
+    <PackageReference Include="Hangfire" Version="1.7.10" />
+    <PackageReference Include="HangFire.Autofac" Version="2.3.1" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.10" />
+    <PackageReference Include="Hangfire.MemoryStorage" Version="1.7.0" />
     <PackageReference Include="HtmlAgilityPack" Version="1.11.23" />
     <PackageReference Include="HtmlSanitizer" Version="5.0.304" />
+    <PackageReference Include="IP2Region" Version="1.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.3" />
@@ -146,6 +154,8 @@ github：https://github.com/ldqk/Masuit.Tools</Description>
     <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="4.7.0" />
     <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
     <PackageReference Include="System.Management" Version="4.7.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="WinInsider.System.Net.Http.Formatting" Version="1.0.14" />
   </ItemGroup>
 
   <ItemGroup>

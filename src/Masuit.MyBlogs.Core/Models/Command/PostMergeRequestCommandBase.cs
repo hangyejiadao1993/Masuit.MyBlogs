@@ -1,5 +1,5 @@
-using Masuit.MyBlogs.Core.Models.DTO;
-using Masuit.MyBlogs.Core.Models.Validation;
+using Masuit.MyBlogs.Domain.Validation;
+using Masuit.MyBlogs.Services.DTO;
 using System.ComponentModel.DataAnnotations;
 
 namespace Masuit.MyBlogs.Core.Models.Command

@@ -6,7 +6,7 @@ namespace Masuit.Tools.Mapping.Exceptions
     /// <summary>
     /// 映射未初始化时的异常
     /// </summary>
-    [Serializable]
+    //[Serializable]
     public class MapperNotInitializedException : MapperExceptionBase
     {
         /// <summary>

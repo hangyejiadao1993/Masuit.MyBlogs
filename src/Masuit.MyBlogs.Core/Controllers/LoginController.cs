@@ -1,5 +1,5 @@
-﻿using Masuit.MyBlogs.Core.Infrastructure.Services.Interface;
-using Masuit.MyBlogs.Core.Models.ViewModel;
+﻿using Masuit.MyBlogs.Core.Models.ViewModel;
+using Masuit.MyBlogs.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;

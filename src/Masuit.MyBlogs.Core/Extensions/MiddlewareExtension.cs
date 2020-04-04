@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using AutoMapper.Extensions.ExpressionMapping;
 using CacheManager.Core;
-using Masuit.MyBlogs.Core.Configs;
+using Masuit.Tools.Core.Configs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.DependencyInjection;

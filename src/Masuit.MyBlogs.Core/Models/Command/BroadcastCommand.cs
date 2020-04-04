@@ -1,5 +1,5 @@
-using Masuit.MyBlogs.Core.Models.Entity;
-using Masuit.MyBlogs.Core.Models.Enum;
+using Masuit.MyBlogs.Domain.Entity;
+using Masuit.MyBlogs.Domain.Enum;
 using Masuit.Tools.Core.Validator;
 using System;
 

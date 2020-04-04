@@ -1,5 +1,5 @@
-﻿using Masuit.MyBlogs.Core.Models.DTO;
-using Masuit.MyBlogs.Core.Models.Entity;
+﻿using Masuit.MyBlogs.Domain.Entity;
+using Masuit.MyBlogs.Services.DTO;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Masuit.MyBlogs.Core.Controllers

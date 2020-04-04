@@ -6,7 +6,7 @@ namespace Masuit.Tools.Mapping.Exceptions
     /// <summary>
     /// mapper异常基类
     /// </summary>
-    [Serializable]
+    //[Serializable]
     public class MapperExceptionBase : Exception
     {
         /// <summary>

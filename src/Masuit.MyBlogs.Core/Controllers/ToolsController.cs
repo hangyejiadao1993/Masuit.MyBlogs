@@ -1,4 +1,4 @@
-﻿using Masuit.MyBlogs.Core.Configs;
+﻿using Masuit.Tools.Core.Configs;
 using Masuit.Tools.Core.Net;
 using Masuit.Tools.Models;
 using Microsoft.AspNetCore.Mvc;

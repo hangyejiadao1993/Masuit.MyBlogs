@@ -1,8 +1,8 @@
 ﻿using Hangfire;
-using Masuit.MyBlogs.Core.Common;
 using Masuit.MyBlogs.Core.Extensions.Hangfire;
 using Masuit.Tools;
 using Masuit.Tools.Core.Net;
+using Masuit.Tools.Helper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Net.Http.Headers;
 using System;

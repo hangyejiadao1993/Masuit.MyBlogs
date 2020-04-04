@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Masuit.LuceneEFCore.SearchEngine\Masuit.LuceneEFCore.SearchEngine.csproj" />
+    <ProjectReference Include="..\Masuit.Tools.Core\Masuit.Tools.Core.csproj" />
+  </ItemGroup>
+
+</Project>

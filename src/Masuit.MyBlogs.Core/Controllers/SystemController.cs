@@ -1,11 +1,11 @@
-﻿using Masuit.MyBlogs.Core.Common;
-using Masuit.MyBlogs.Core.Extensions.Hangfire;
+﻿using Masuit.MyBlogs.Core.Extensions.Hangfire;
 using Masuit.MyBlogs.Core.Hubs;
-using Masuit.MyBlogs.Core.Infrastructure.Services.Interface;
-using Masuit.MyBlogs.Core.Models.Entity;
-using Masuit.MyBlogs.Core.Models.Enum;
+using Masuit.MyBlogs.Domain.Entity;
+using Masuit.MyBlogs.Domain.Enum;
+using Masuit.MyBlogs.Services.Interface;
 using Masuit.Tools;
 using Masuit.Tools.Hardware;
+using Masuit.Tools.Helper;
 using Masuit.Tools.Logging;
 using Masuit.Tools.Models;
 using Masuit.Tools.Systems;

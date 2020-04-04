@@ -1,5 +1,4 @@
-using Masuit.MyBlogs.Core.Models.Entity;
-using Masuit.MyBlogs.Core.Models.Enum;
+using Masuit.MyBlogs.Domain.Entity;
 using System.ComponentModel.DataAnnotations;
 
 namespace Masuit.MyBlogs.Core.Models.Command
@@ -11,7 +10,7 @@ namespace Masuit.MyBlogs.Core.Models.Command
     {
         public LinksCommand()
         {
-            Status = Status.Available;
+            Status = Masuit.MyBlogs.Domain.Enum.Status.Available;
             Except = false;
         }
 
