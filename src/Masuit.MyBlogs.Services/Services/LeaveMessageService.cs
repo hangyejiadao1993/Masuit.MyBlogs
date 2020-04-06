@@ -1,4 +1,5 @@
-﻿using Masuit.LuceneEFCore.SearchEngine.Interfaces;
+﻿using AutoMapper;
+using Masuit.LuceneEFCore.SearchEngine.Interfaces;
 using Masuit.MyBlogs.Core.Infrastructure.Repository.Interface;
 using Masuit.MyBlogs.Domain.Entity;
 using Masuit.MyBlogs.EntityFrameworkCore;
@@ -10,7 +11,7 @@ namespace Masuit.MyBlogs.Services
 {
     public partial class LeaveMessageService : BaseService<LeaveMessage>, ILeaveMessageService
     {
-        public LeaveMessageService(IBaseRepository<LeaveMessage> repository, ISearchEngine<DataContext> searchEngine, ILuceneIndexSearcher searcher) : base(repository, searchEngine, searcher)
+        public LeaveMessageService(IBaseRepository<LeaveMessage> repository, ISearchEngine<DataContext> searchEngine, ILuceneIndexSearcher searcher, IMapper mapper) : base(repository, searchEngine, searcher, mapper)
         {
         }
 

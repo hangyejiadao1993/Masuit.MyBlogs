@@ -1,4 +1,5 @@
-﻿using CacheManager.Core;
+﻿using AutoMapper;
+using CacheManager.Core;
 using Masuit.LuceneEFCore.SearchEngine.Interfaces;
 using Masuit.LuceneEFCore.SearchEngine.Linq;
 using Masuit.MyBlogs.Core.Infrastructure.Repository.Interface;
@@ -20,7 +21,7 @@ namespace Masuit.MyBlogs.Services
         public ICacheManager<List<Advertisement>> CacheManager { get; set; }
         public ICacheManager<bool> ValueCacheManager { get; set; }
 
-        public AdvertisementService(IBaseRepository<Advertisement> repository, ISearchEngine<DataContext> searchEngine, ILuceneIndexSearcher searcher) : base(repository, searchEngine, searcher)
+        public AdvertisementService(IBaseRepository<Advertisement> repository, ISearchEngine<DataContext> searchEngine, ILuceneIndexSearcher searcher,IMapper mapper) : base(repository, searchEngine, searcher,mapper)
         {
         }
 

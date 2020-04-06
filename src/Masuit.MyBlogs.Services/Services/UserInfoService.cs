@@ -9,6 +9,8 @@ using Masuit.Tools.DateTimeExt;
 using Masuit.Tools.Security;
 using System; 
 using Masuit.Tools.Helper;
+using AutoMapper;
+
 namespace Masuit.MyBlogs.Services
 {
     public partial class UserInfoService : BaseService<UserInfo>, IUserInfoService
@@ -34,7 +36,8 @@ namespace Masuit.MyBlogs.Services
             UserInfo userInfo = GetByUsername(username);
             if (userInfo != null)
             {
-                UserInfoDto user = userInfo.Mapper<UserInfoDto>();
+                UserInfoDto user = _mapper.Map<UserInfoDto>();
+                //userInfo.Mapper<UserInfoDto>();
                 string key = userInfo.SaltKey;
                 string pwd = userInfo.Password;
                 password = password.MDString3(key);
@@ -146,7 +149,7 @@ namespace Masuit.MyBlogs.Services
             return false;
         }
 
-        public UserInfoService(IBaseRepository<UserInfo> repository, ISearchEngine<DataContext> searchEngine, ILuceneIndexSearcher searcher) : base(repository, searchEngine, searcher)
+        public UserInfoService(IBaseRepository<UserInfo> repository, ISearchEngine<DataContext> searchEngine, ILuceneIndexSearcher searcher,IMapper mapper) : base(repository, searchEngine, searcher, mapper)
         {
         }
     }

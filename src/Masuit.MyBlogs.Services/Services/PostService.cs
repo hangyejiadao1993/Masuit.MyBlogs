@@ -18,13 +18,15 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 using Masuit.Tools.Helper;
+using AutoMapper;
+
 namespace Masuit.MyBlogs.Services
 {
     public partial class PostService : BaseService<Post>, IPostService
     {
         private readonly ICacheManager<SearchResult<PostDto>> _cacheManager;
 
-        public PostService(IPostRepository repository, ISearchEngine<DataContext> searchEngine, ILuceneIndexSearcher searcher, ICacheManager<SearchResult<PostDto>> cacheManager) : base(repository, searchEngine, searcher)
+        public PostService(IPostRepository repository, ISearchEngine<DataContext> searchEngine, ILuceneIndexSearcher searcher, ICacheManager<SearchResult<PostDto>> cacheManager,IMapper mapper) : base(repository, searchEngine, searcher, mapper)
         {
             _cacheManager = cacheManager;
         }
@@ -43,7 +45,12 @@ namespace Masuit.MyBlogs.Services
             var dic = GetQuery<PostDto>(p => ids.Contains(p.Id)).ToDictionary(p => p.Id);
             var posts = entities.Select(s =>
             {
-                var item = s.Entity.Mapper<PostDto>();
+                //var mapper = new AutoMapper.Mapper();
+                var item = _mapper.Map<PostDto>(s.Entity)
+                ;
+                //new  PostDto ();
+                //s.Entity.Mapper<PostDto>()
+                ;
                 if (dic.ContainsKey(item.Id))
                 {
                     item.CategoryName = dic[item.Id].CategoryName;

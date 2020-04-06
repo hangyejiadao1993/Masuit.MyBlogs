@@ -1,4 +1,5 @@
-﻿using Masuit.MyBlogs.Core.Extensions.Hangfire;
+﻿using Masuit.MyBlogs.Core.Extensions;
+using Masuit.MyBlogs.Core.Extensions.Hangfire;
 using Masuit.MyBlogs.Core.Models.ViewModel;
 using Masuit.MyBlogs.Domain.Enum;
 using Masuit.MyBlogs.Services.DTO;
@@ -168,7 +169,7 @@ namespace Masuit.MyBlogs.Core.Controllers
         {
             var user = HttpContext.Session.Get<UserInfoDto>(SessionKey.UserInfo);
 #if DEBUG
-            user = UserInfoService.GetByUsername("masuit").Mapper<UserInfoDto>();
+            user =   UserInfoService.GetByUsername("masuit").Mapper<UserInfoDto>();
 #endif
 
             return ResultData(user);

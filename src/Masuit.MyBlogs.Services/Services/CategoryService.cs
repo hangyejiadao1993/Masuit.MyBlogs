@@ -1,4 +1,5 @@
-﻿using Masuit.LuceneEFCore.SearchEngine.Interfaces;
+﻿using AutoMapper;
+using Masuit.LuceneEFCore.SearchEngine.Interfaces;
 using Masuit.MyBlogs.Core.Infrastructure.Repository.Interface;
 using Masuit.MyBlogs.Domain.Entity;
 using Masuit.MyBlogs.EntityFrameworkCore;
@@ -33,7 +34,7 @@ namespace Masuit.MyBlogs.Services
             return b;
         }
 
-        public CategoryService(IBaseRepository<Category> repository, ISearchEngine<DataContext> searchEngine, ILuceneIndexSearcher searcher) : base(repository, searchEngine, searcher)
+        public CategoryService(IBaseRepository<Category> repository, ISearchEngine<DataContext> searchEngine, ILuceneIndexSearcher searcher, IMapper mapper) : base(repository, searchEngine, searcher, mapper)
         {
         }
     }

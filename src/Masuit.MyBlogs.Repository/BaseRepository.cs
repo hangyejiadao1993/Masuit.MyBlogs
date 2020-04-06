@@ -1,6 +1,8 @@
-﻿using AutoMapper;
+﻿ 
+using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Masuit.MyBlogs.Core.Infrastructure.Repository.Interface;
+using Masuit.MyBlogs.Domain.Entity;
 using Masuit.MyBlogs.EntityFrameworkCore;
 using Masuit.Tools;
 using Masuit.Tools.Core.AspNetCore;

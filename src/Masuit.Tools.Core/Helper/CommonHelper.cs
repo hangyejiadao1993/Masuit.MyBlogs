@@ -27,7 +27,7 @@ namespace Masuit.Tools.Helper
     /// </summary>
     public static class CommonHelper
     {
-        private static readonly IMapper _mapper;
+       
 
 
 
@@ -188,11 +188,7 @@ namespace Masuit.Tools.Helper
         /// <typeparam name="T"></typeparam>
         /// <param name="source"></param>
         /// <returns></returns>
-        public static T Mapper<T>(this object source) where T : class
-        {
-            return _mapper.Map<T>(source);
-
-        }
+      
         /// <summary>
         /// 发送邮件
         /// </summary>

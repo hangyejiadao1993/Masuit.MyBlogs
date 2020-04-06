@@ -1,4 +1,5 @@
-﻿using Masuit.LuceneEFCore.SearchEngine.Interfaces;
+﻿using AutoMapper;
+using Masuit.LuceneEFCore.SearchEngine.Interfaces;
 using Masuit.MyBlogs.Core.Infrastructure.Repository.Interface;
 using Masuit.MyBlogs.Domain.Entity;
 using Masuit.MyBlogs.EntityFrameworkCore;
@@ -12,7 +13,7 @@ namespace Masuit.MyBlogs.Services
     {
         private readonly ISearchDetailsRepository _searchDetailsRepository;
 
-        public SearchDetailsService(IBaseRepository<SearchDetails> repository, ISearchEngine<DataContext> searchEngine, ILuceneIndexSearcher searcher, ISearchDetailsRepository searchDetailsRepository) : base(repository, searchEngine, searcher)
+        public SearchDetailsService(IBaseRepository<SearchDetails> repository, ISearchEngine<DataContext> searchEngine, ILuceneIndexSearcher searcher, ISearchDetailsRepository searchDetailsRepository,IMapper mapper) : base(repository, searchEngine, searcher, mapper)
         {
             _searchDetailsRepository = searchDetailsRepository;
         }

@@ -1137,15 +1137,13 @@
             <param name="ips"></param>
             <returns></returns>
         </member>
-        <member name="M:Masuit.Tools.Helper.CommonHelper.Mapper``1(System.Object)">
+        <member name="M:Masuit.Tools.Helper.CommonHelper.SendMail(System.String,System.String,System.String)">
             <summary>
             类型映射
             </summary>
             <typeparam name="T"></typeparam>
             <param name="source"></param>
             <returns></returns>
-        </member>
-        <member name="M:Masuit.Tools.Helper.CommonHelper.SendMail(System.String,System.String,System.String)">
             <summary>
             发送邮件
             </summary>

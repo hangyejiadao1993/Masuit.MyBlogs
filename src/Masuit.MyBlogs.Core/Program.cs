@@ -20,7 +20,7 @@ namespace Masuit.MyBlogs.Core
                 AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)
             };
             MyHub.Init();
-            CreateWebHostBuilder(args).Build().Run();
+            CreateWebHostBuilder(args).Build().Run() ;
         }
 
         public static IHostBuilder CreateWebHostBuilder(string[] args) => Host.CreateDefaultBuilder(args).UseServiceProviderFactory(new AutofacServiceProviderFactory()).ConfigureWebHostDefaults(hostBuilder => hostBuilder.UseKestrel(opt =>

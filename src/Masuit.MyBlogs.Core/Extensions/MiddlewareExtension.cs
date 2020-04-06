@@ -38,9 +38,9 @@ namespace Masuit.MyBlogs.Core.Extensions
         /// <returns></returns>
         public static IServiceCollection AddMapper(this IServiceCollection services)
         {
-            var mc = new MapperConfiguration(cfg => cfg.AddExpressionMapping().AddProfile(new MappingProfile()));
-            services.AddAutoMapper(cfg => cfg.AddExpressionMapping().AddProfile(new MappingProfile()), Assembly.GetExecutingAssembly());
-            services.AddSingleton(mc);
+            var mc = new MapperConfiguration(cfg => cfg.AddProfile<MappingProfile>());
+            services.AddAutoMapper(cfg => cfg.AddExpressionMapping().AddProfile<MappingProfile>(), AppDomain.CurrentDomain.GetAssemblies());
+            services.AddSingleton(mc); 
             return services;
         }
 

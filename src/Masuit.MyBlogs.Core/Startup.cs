@@ -1,5 +1,7 @@
 ﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using AutoMapper;
+using AutoMapper.Extensions.ExpressionMapping;
 using CSRedis;
 using Hangfire;
 using Hangfire.Dashboard;
@@ -110,9 +112,12 @@ namespace Masuit.MyBlogs.Core
             {
                 options.RedirectStatusCode = StatusCodes.Status301MovedPermanently;
             });
-
+            services.AddMemoryCache();
             services.AddResponseCache().AddCacheConfig();
             services.AddHangfire(x => x.UseMemoryStorage()); //配置hangfire
+                                                             //services.AddAutoMapper();
+                                                             //services.AddScoped<IMapper, Mapper>();
+                                                             //services.AddTransient<IMapper, Mapper>();
 
             services.AddSevenZipCompressor().AddResumeFileResult().AddSearchEngine<DataContext>(new LuceneIndexerOptions()
             {
@@ -137,7 +142,12 @@ namespace Masuit.MyBlogs.Core
                 options.PopupShowTrivial = true;
             }).AddEntityFramework();
             services.AddBundling().UseDefaults(_env).UseNUglify().EnableMinification().EnableChangeDetection().EnableCacheHeader(TimeSpan.FromHours(1));
-            services.AddMapper().AddAutofac().AddMyMvc().Configure<ForwardedHeadersOptions>(options => // X-Forwarded-For
+
+            var mc = new MapperConfiguration(cfg => cfg.AddProfile<MappingProfile>());
+            services.AddAutoMapper(cfg => cfg.AddExpressionMapping().AddProfile<MappingProfile>(), AppDomain.CurrentDomain.GetAssemblies());
+            services.AddSingleton(mc);
+
+            services.AddAutofac().AddMyMvc().Configure<ForwardedHeadersOptions>(options => // X-Forwarded-For
             {
                 options.ForwardLimit = null;
                 options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
